@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
+    "rootDir": ".",
     "outDir": "./dist",
-    "module": "esnext",
+    "module": "ESNext",
     "target": "es5",
-    "lib": ["es6", "dom"],
     "sourceMap": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDir": ".",
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
@@ -17,14 +16,5 @@
   },
   "exclude": [
     "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
-  ],
-  "types": [
-    "typePatches"
   ]
 }

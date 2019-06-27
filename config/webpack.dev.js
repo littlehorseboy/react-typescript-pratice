@@ -1,9 +1,9 @@
+/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
-
-/* eslint import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 
 module.exports = merge(common, {
   mode: 'development',
@@ -13,7 +13,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     overlay: {
       warnings: true,
-      errors: true
+      errors: true,
     },
     inline: true,
     hot: true,
